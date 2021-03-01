@@ -1,11 +1,13 @@
 
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Components/Navbar"
 
 function App() {
   return (
-    <h1>
-      Lingeshwaran Krishnan's React Portfolio
-    </h1>
+    
+    <Navbar />
+    
   );
 }
 
