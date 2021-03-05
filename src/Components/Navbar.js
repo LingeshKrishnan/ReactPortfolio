@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from "../logo1.png";
+import React from "react";
+import logo from "../hireme.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () =>  {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark transparent">
           <div className="container">
             <a className="navbar-brand" href="#"><img calssName="logo"src={logo}/></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,6 @@ const Navbar = () =>  {
               </div>
             </div>
         </nav>
-    );
+    )
 }
 export default Navbar

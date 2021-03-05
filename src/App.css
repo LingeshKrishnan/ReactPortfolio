@@ -4,16 +4,21 @@
   --primary-white : #ffff;
   --primary-brown : #fd7e14;
   --primary-dark : #343A40;
+  --black : #000000;
 }
 /**********************************************Style For Logo****************************************************/
 .logo {
   width: 16.25rem;
-  padding: 10 10 10;
+ 
+ 
 }
 
 
 /**********************************************Style for Navigation Link*****************************************************/
-
+nav {
+  z-index: 2;
+  
+}
 nav a .nav-link {
   cursor: pointer;
   letter-spacing: 0.5rem;
@@ -33,15 +38,22 @@ nav ul li {
   
  }
  .navbar a {
-  
-   padding: 0 !important;
-   margin: 10px;
- }
+ padding: 0 !important; 
+   
+}
  .navbar-brand 
  {
+  
+   top: 0;
+   left: 0;
    max-width: 16rem;
    height: 4rem !important;
    padding: 0 !important;
+ }
+ 
+ .navbar-brand img {
+   width: auto;
+   height: 10vh;
  }
  .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
    border-top: 0.1875rem solid var(--primary-brown) ;
@@ -49,3 +61,83 @@ nav ul li {
  .navbar-nav > li > a:hover{
   border-top: 0.1875rem solid var(--primary-brown) ;
  }
+
+ /**********************Header Wrapper***************************/
+ .header-wrapper{
+  position: relative;
+   background : url(maininfobaner.jpg) no-repeat;
+  
+  animation: flips 5s ease ;
+  animation-iteration-count: 2;   
+   height: 90vh;
+   background-size: cover;
+   
+   
+ }
+ @keyframes flips {
+  0% { -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  10% { -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  
+}
+
+
+
+
+ /**********************Main info***************************/
+ .main-info {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+ /*******************************************H2 In Main info**********************************************************/
+ .main-info h1 {
+ color: black;
+  
+}
+
+ /**************************Typed Text************************/
+
+ .typed-text {
+   
+   text-transform: uppercase;
+   color :var(--black);
+   font-weight: bold;
+   font-size: 2rem;
+   
+ }
+
+ /*************************For React JS Particles**************/
+ .tsparticles-canvas-el{
+   position: absolute;
+  
+   z-index: 1;
+   margin-right: 200px;
+   
+ }
+
+ /********************************************For Experience section************************************************/
+/*.work_column{
+  background: url(work.jpg) no-repeat;
+  background-size: cover;
+}
+.education_column{
+  background: url(edu.jpg) no-repeat;
+  background-size: cover;
+}
+ 
+
+/**********************Divider for common***********************/
+.divider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
