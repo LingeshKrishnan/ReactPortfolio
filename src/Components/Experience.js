@@ -25,9 +25,7 @@ class Experience extends React.Component {
             
 
             <section className="experience_section" >
-                <div className="common_title">
-                    <h1 align="center">Work Experience and Educational Qualification</h1>
-                </div>
+                
                 <Grid container className="section" >
                    
 
@@ -61,7 +59,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={3} className="paper">
+                                            <Paper elevation={5} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                     QA Tester from June 2017 - July 2018
                                                 </Typography>
@@ -95,7 +93,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={3} className="paper">
+                                            <Paper elevation={4} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                    Web Developer From October 2017 - Present
                                                 </Typography>
@@ -117,14 +115,14 @@ class Experience extends React.Component {
                 </Grid>
                 </Grid>
 
+<TimelineSeparator/>
 
-
-                      {/* //Work and Experience section  */}
+                      {/* //Educational Qualification section  */}
                 <Grid item xs={6} className="education_column">
                 <Grid container className="title_container">
                         <Grid item className='section_title'>
                             <span></span>
-                            <h4 className="experiencetitle"><ImportContactsIcon/>Educational Qualification</h4>
+                            <h2 className="experiencetitle"><ImportContactsIcon/>Educational Qualification</h2>
                         </Grid>
                         </Grid>
                     <Grid container>
@@ -150,7 +148,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={3} className="paper">
+                                            <Paper elevation={5} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                     QA Tester from June 2017 - July 2018
                                                 </Typography>
@@ -183,12 +181,12 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={3} className="paper">
+                                            <Paper elevation={4} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                    Web Developer From October 2017 - Present
                                                 </Typography>
-                                                <Typography variant="body1" style={{color: "blue"}}>
-                                                    Works in PHP, Javascript, HTML, CSS and Query
+                                                <Typography variant="body2" style={{color: "blue"}}>
+                                                    Works in PHP, Javascript, HTML, CSS and jQuery
                                                 </Typography>
                                                 <Typography>
                                                    Works in Malaysian client(Leiya Wellness) and Algebra Consultants Website
