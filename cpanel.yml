@@ -1,0 +1,5 @@
+----
+  deployment:
+    tasks:
+      - expoer DEPLOYPATH-/home/algebrac/public_html/lingeshwaran.me
+      - /bin/cp -a * $DEPLOYPATH
