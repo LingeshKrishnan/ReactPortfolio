@@ -30,7 +30,7 @@ class Experience extends React.Component {
                    
 
                 {/* //Work and Experience section  */}
-                <Grid item xs={6} className="work_column" spacing={24}>
+                <Grid item xs={12} className="work_column" spacing={24}>
                 <Grid container className="title_container">
                         <Grid item className='section_title'>
                             <span></span>
@@ -38,7 +38,7 @@ class Experience extends React.Component {
                         </Grid>
                         </Grid>
                     <Grid container>
-                        <Grid item sm={6} md={12}>
+                        <Grid item sm={12} md={12}>
                                 <Timeline align="alternate">
                                     {/*Timeline Item for Testronic Experience */}
                                     <TimelineItem>
@@ -117,8 +117,14 @@ class Experience extends React.Component {
 
 <TimelineSeparator/>
 
-                      {/* //Educational Qualification section  */}
-                <Grid item xs={6} className="education_column">
+                   
+
+              
+                 </Grid>
+                 <Grid container className="section1">
+
+                           {/* //Educational Qualification section  */}
+                <Grid item xs={12} className="education_column">
                 <Grid container className="title_container">
                         <Grid item className='section_title'>
                             <span></span>
@@ -126,7 +132,7 @@ class Experience extends React.Component {
                         </Grid>
                         </Grid>
                     <Grid container>
-                        <Grid item sm={6} md={12}>
+                        <Grid item sm={12} md={12}>
                                 <Timeline align="alternate">
                                     {/*Timeline Item for Testronic Experience */}
                                     <TimelineItem>
@@ -204,8 +210,6 @@ class Experience extends React.Component {
                 </Grid>
 
 
-
-              
                  </Grid>
                 </section>
         )
