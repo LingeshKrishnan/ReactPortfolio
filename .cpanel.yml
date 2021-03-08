@@ -1,5 +1,5 @@
-----
+---
   deployment:
     tasks:
       - export DEPLOYPATH=/home/algebrac/public_html/lingeshwaran.me
-      - /bin/cp -a * $DEPLOYPATH
+      - /bin/cp -R * $DEPLOYPATH
