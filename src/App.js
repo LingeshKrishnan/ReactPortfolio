@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Particles from "react-particles-js";
 import Experience from "./Components/Experience";
 import Divider from "./Components/divider";
+import Contact from "./Components/Contact"
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
     <Header />
     <Divider/>
     <Experience/>
+    <Contact/>
     </>
   );
 }

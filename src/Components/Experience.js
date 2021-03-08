@@ -24,7 +24,7 @@ class Experience extends React.Component {
         return(
             
 
-            <section className="experience_section" >
+            <section className="experience_section" id="section">
                 
                 <Grid container className="section" >
                    
@@ -59,7 +59,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={5} className="paper">
+                                            <Paper elevation={2} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                     QA Tester from June 2017 - July 2018
                                                 </Typography>
@@ -93,7 +93,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={4} className="paper">
+                                            <Paper elevation={2} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                    Web Developer From October 2017 - Present
                                                 </Typography>
@@ -154,7 +154,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={5} className="paper">
+                                            <Paper elevation={2} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                     QA Tester from June 2017 - July 2018
                                                 </Typography>
@@ -187,7 +187,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={4} className="paper">
+                                            <Paper elevation={2} className="paper">
                                                 <Typography variant={"h6"} component="h1">
                                                    Web Developer From October 2017 - Present
                                                 </Typography>
