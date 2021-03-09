@@ -71,7 +71,7 @@ nav ul li {
    background : url(Lingesh_Cover.JPG) no-repeat;
   
   animation: flips 5s ease ;
-  animation-iteration-count: 2;   
+  animation-iteration-count: 1;   
    height: 90vh;
    background-size: cover;
    
@@ -104,7 +104,7 @@ nav ul li {
 
  /*******************************************H2 In Main info**********************************************************/
  .main-info h1 {
- color: black;
+ color:white;
   
 }
 
@@ -113,7 +113,7 @@ nav ul li {
  .typed-text {
    
    text-transform: uppercase;
-   color :var(--black);
+   color :var(--primary-white);
    font-weight: bold;
    font-size: 2rem;
    
@@ -136,9 +136,34 @@ nav ul li {
 .education_column{
   background: url(edu.jpg) no-repeat;
   background-size: cover;
-}
- 
+} */
 
+ .wavetext{
+   position: relative;
+   -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(0,0,0,0.2));
+ }
+.wavetext span{
+  position: relative;
+  display: inline-block;
+  color: black;
+  font-size: 2rem;
+  animation: wave 1s ease-in-out ;
+  animation-iteration-count: 8;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes wave {
+  0%{
+    transform: translateY(0px);
+  }
+
+  20%{
+    transform: translateY(-20px);
+  }
+  40%,100%{
+    transform: translateY(0px);
+  }
+
+}
 /**********************Divider for common***********************/
 .divider {
   margin-top: 30px;
@@ -164,7 +189,7 @@ nav ul li {
 
 }
 .contact_form{
-  opacity: 90%;
+  
   display: flex;
   margin: 0 auto;
   background: black;
