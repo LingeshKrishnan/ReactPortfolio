@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () =>  {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark transparent">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top" style={{padding:"0"}} >
           <div className="container">
             <a className="navbar-brand" href="#"><img calssName="logo"src={logo}/></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

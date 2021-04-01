@@ -74,7 +74,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={2} className="paper">
+                                            
                                                 <Typography variant={"h6"} component="h1">
                                                     QA Tester from June 2017 - July 2018
                                                 </Typography>
@@ -84,7 +84,7 @@ class Experience extends React.Component {
                                                 <Typography>
                                                     Experience in Consoloe, Xbox, PS and Mobile Game Testing
                                                 </Typography>
-                                            </Paper>
+                                         
                                         </TimelineContent>
                                     </TimelineItem>
 
@@ -131,7 +131,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={2} className="paper">
+                                            
                                                 <Typography variant={"h6"} component="h1">
                                                    Web Developer From October 2017 - Present
                                                 </Typography>
@@ -144,7 +144,7 @@ class Experience extends React.Component {
                                                 <Typography>
                                                     Having Skills in PHP, React, HTML, CSS and jQuery
                                                 </Typography>
-                                            </Paper>
+                                           
                                         </TimelineContent>
                                     </TimelineItem>
                                 </Timeline>
@@ -228,7 +228,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={2} className="paper">
+                                           
                                                 <Typography variant={"h6"} component="h1">
                                                     QA Tester from June 2017 - July 2018
                                                 </Typography>
@@ -238,7 +238,7 @@ class Experience extends React.Component {
                                                 <Typography>
                                                     Experience in Consoloe, Xbox, PS and Mobile Game Testing
                                                 </Typography>
-                                            </Paper>
+                                          
                                         </TimelineContent>
                                     </TimelineItem>
 
@@ -289,7 +289,7 @@ class Experience extends React.Component {
                                             <TimelineConnector/>
                                         </TimelineSeparator>
                                         <TimelineContent>
-                                            <Paper elevation={2} className="paper">
+                                           
                                                 <Typography variant={"h6"} component="h1">
                                                    Web Developer From October 2017 - Present
                                                 </Typography>
@@ -302,7 +302,7 @@ class Experience extends React.Component {
                                                 <Typography>
                                                     Having Skills in PHP, React, HTML, CSS and jQuery
                                                 </Typography>
-                                            </Paper>
+                                            
                                         </TimelineContent>
                                     </TimelineItem>
                                 </Timeline>

@@ -5,7 +5,7 @@ const Contact = () => {
     function sendemail(e){
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'template_g6jj28q', e.target, 'user_iUfbyMaQ7nLQyQKp4xkV8')
+        emailjs.sendForm('service_6ddzctk', 'template_g6jj28q', e.target, 'user_iUfbyMaQ7nLQyQKp4xkV8')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -27,7 +27,8 @@ const Contact = () => {
                    </div>
                    <div className="msg">
                         <textarea placeholder="Message" name="Message"/>
-                        <div className="btn">Send to Hire/Assess</div>
+                        
+                        <button class="btn btn-lg btn-info" type="submit">Hire/Proposal</button>
                    </div>
 
                </div>
