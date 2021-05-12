@@ -241,3 +241,18 @@ box-shadow: 0 0 0 10px black;
   text-transform: uppercase;
   
 }
+
+/******************For Porfolio*************/
+
+.Portfolio{
+  position: relative;
+}
+.Portfolio .card-columns .card .card-body {
+  display: block;
+  
+}
+.Portfolio .card-columns .card .card-body img {
+  margin: auto;
+  width: 100%;
+  
+}

@@ -46,21 +46,7 @@ class Experience extends React.Component {
                                             <Typography variant="h5" style={{color:"#090561"}}>
                                                 <div className="wavecontainer">
                                                <div className="wavetext">
-                                                   <span style={{"--i": "1"}}>T</span>
-                                                   <span style={{"--i": "2"}}>e</span>
-                                                   <span style={{"--i": "3"}}>s</span>
-                                                   <span style={{"--i": "4"}}>t</span>
-                                                   <span style={{"--i": "5"}}>r</span>
-                                                   <span style={{"--i": "6"}}>o</span>
-                                                   <span style={{"--i": "7"}}>n</span>
-                                                   <span style={{"--i": "8"}}>i</span>
-                                                   <span style={{"--i": "9"}}>c</span>
-                                                   <span style={{"--i": "10"}}>S</span>
-                                                   <span style={{"--i": "11"}}>p</span>
-                                                   <span style={{"--i": "12"}}>.</span>
-                                                   <span style={{"--i": "13"}}>Z</span>
-                                                   <span style={{"--i": "14"}}>o</span>
-                                                   <span style={{"--i": "15"}}>o</span>
+                                                   <span>Testronic Sp.Zoo</span>
 
 
                                                </div>
@@ -95,29 +81,7 @@ class Experience extends React.Component {
                                            
                                             <div className="wavecontainer">
                                                <div className="wavetext">
-                                                   <span style={{"--i": "1"}}>A</span>
-                                                   <span style={{"--i": "2"}}>C</span>
-                                                   <span style={{"--i": "3"}}>E</span>
-                                                   <span style={{"--i": "4"}}>S</span>
-                                                   <span style={{"--i": "5"}}>e</span>
-                                                   <span style={{"--i": "6"}}>r</span>
-                                                   <span style={{"--i": "7"}}>v</span>
-                                                   <span style={{"--i": "8"}}>i</span>
-                                                   <span style={{"--i": "9"}}>c</span>
-                                                   <span style={{"--i": "10"}}>e</span>
-                                                   <span style={{"--i": "11"}}>s</span>
-                                                   <span style={{"--i": "12"}}>A</span>
-                                                   <span style={{"--i": "13"}}>n</span>
-                                                   <span style={{"--i": "14"}}>d</span>
-                                                   <span style={{"--i": "15"}}>S</span>
-                                                   <span style={{"--i": "16"}}>o</span>
-                                                   <span style={{"--i": "17"}}>l</span>
-                                                   <span style={{"--i": "18"}}>u</span>
-                                                   <span style={{"--i": "19"}}>t</span>
-                                                   <span style={{"--i": "20"}}>i</span>
-                                                   <span style={{"--i": "21"}}>o</span>
-                                                   <span style={{"--i": "22"}}>n</span>
-                                                   <span style={{"--i": "23"}}>s</span>
+                                                  <span>ACE Sevices and Solutions</span>
 
 
                                                </div>

@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Particles from "react-particles-js";
 import Experience from "./Components/Experience";
+import Portfolio from "./Components/Portfolio";
 import Divider from "./Components/divider";
 import Contact from "./Components/Contact";
 import AOS from "aos";
@@ -53,6 +54,7 @@ function App() {
     <Header />
     <Divider/>
     <Experience/>
+    <Portfolio/>
     <Contact/>
     </>
   );
