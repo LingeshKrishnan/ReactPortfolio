@@ -1,12 +1,14 @@
 
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Components/Navbar";
-import Header from "./Components/Header";
+import Navbar from "./Components/Navbar/Navbar";
+import Header from "./Components/Header/Header";
 import Particles from "react-particles-js";
-import Experience from "./Components/Experience";
+import Experience from "./Components/Experience/Experience";
 import Divider from "./Components/divider";
-import Contact from "./Components/Contact"
+import Contact from "./Components/Contact/Contact"
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Certificate from './Components/Certificate/Certificate';
 
 function App() {
   return (
@@ -48,9 +50,11 @@ function App() {
                 }
        />
     <Navbar />
+    <Certificate />
     <Header />
     <Divider/>
     <Experience/>
+    <Portfolio />
     <Contact/>
     </>
   );
