@@ -1,16 +1,22 @@
 
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Components/Navbar";
-import Header from "./Components/Header";
+import Navbar from "./Components/Navbar/Navbar";
+import Header from "./Components/Header/Header";
 import Particles from "react-particles-js";
-import Experience from "./Components/Experience";
+import Experience from "./Components/Experience/Experience";
 import Divider from "./Components/divider";
-import Contact from "./Components/Contact"
+import Contact from "./Components/Contact/Contact"
+import Portfolio from "./Components/Portfolio/Portfolio";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home/Home';
+
 
 function App() {
   return (
     <>
+    <Router>
+    
      <Particles 
                 params = {
                     {
@@ -48,10 +54,20 @@ function App() {
                 }
        />
     <Navbar />
+    {/* <Certificate /> */}
     <Header />
-    <Divider/>
-    <Experience/>
+  
+    <Home />
+    
     <Contact/>
+    <Routes> 
+
+        <Route path="/portfolio" element ={
+            <Portfolio />
+        }>
+        </Route>
+    </Routes>
+    </Router>
     </>
   );
 }

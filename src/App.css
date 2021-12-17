@@ -12,15 +12,11 @@ body {
 /**********************************************Style For Logo****************************************************/
 .logo {
   width: 16.25rem;
- 
- 
 }
-
 
 /**********************************************Style for Navigation Link*****************************************************/
 nav {
-  z-index: 2;
-  
+  z-index: 2;  
 }
 nav a .nav-link {
   cursor: pointer;
@@ -68,7 +64,7 @@ nav ul li {
  /**********************Header Wrapper***************************/
  .header-wrapper{
   position: relative;
-   background : url(Lingesh_Cover.JPG) no-repeat;
+   background : url('./Components/Images/Lingesh_Cover.JPG') no-repeat;
   
   animation: flips 5s ease ;
   animation-iteration-count: 1;   
@@ -148,7 +144,7 @@ nav ul li {
   color: black;
   font-size: 2rem;
   animation: wave 1s ease-in-out ;
-  animation-iteration-count: 8;
+  animation-iteration-count: 3;
   animation-delay: calc(0.1s * var(--i));
 }
 @keyframes wave {
@@ -175,7 +171,7 @@ nav ul li {
 .Contact_Section{
   position: relative;
   font-family: 'Roboto', sans-serrif;
-  background: url(contact1.jpg) no-repeat top center;
+  background: url('./Components/Images/contact1.jpg') no-repeat top center;
   height: 100vh;
   background-size: cover;
 }
@@ -230,4 +226,39 @@ box-shadow: 0 0 0 10px black;
   cursor: pointer;
   text-transform: uppercase;
   
+}
+
+/**Portfolio **/
+.Portfolio_Section{
+  position: relative;
+}
+.card{
+  height:300px;
+  overflow: hidden;
+}
+.card img{
+  transition: all 0.5s ease;
+}
+.card:hover img {
+  transform: scale(1.2);
+}
+.card-body {
+ position: relative;
+ opacity: 60%; 
+}
+.card-body :hover{
+  color: red;
+  
+  font-size: 20px;
+  font-weight: 900;
+}
+.card-body p{
+padding-top:150px;
+color: black;
+font-size: 20px;
+font-weight: 700px;
+}
+.Portfolio_Title{
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
