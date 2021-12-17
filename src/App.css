@@ -64,7 +64,7 @@ nav ul li {
  /**********************Header Wrapper***************************/
  .header-wrapper{
   position: relative;
-   background : url('./Images/Lingesh_Cover.JPG') no-repeat;
+   background : url('./Components/Images/Lingesh_Cover.JPG') no-repeat;
   
   animation: flips 5s ease ;
   animation-iteration-count: 1;   
@@ -171,7 +171,7 @@ nav ul li {
 .Contact_Section{
   position: relative;
   font-family: 'Roboto', sans-serrif;
-  background: url('./Images/contact1.jpg') no-repeat top center;
+  background: url('./Components/Images/contact1.jpg') no-repeat top center;
   height: 100vh;
   background-size: cover;
 }

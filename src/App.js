@@ -8,11 +8,15 @@ import Experience from "./Components/Experience/Experience";
 import Divider from "./Components/divider";
 import Contact from "./Components/Contact/Contact"
 import Portfolio from "./Components/Portfolio/Portfolio";
-import Certificate from './Components/Certificate/Certificate';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home/Home';
+
 
 function App() {
   return (
     <>
+    <Router>
+    
      <Particles 
                 params = {
                     {
@@ -50,12 +54,20 @@ function App() {
                 }
        />
     <Navbar />
-    <Certificate />
+    {/* <Certificate /> */}
     <Header />
-    <Divider/>
-    <Experience/>
-    <Portfolio />
+  
+    <Home />
+    
     <Contact/>
+    <Routes> 
+
+        <Route path="/portfolio" element ={
+            <Portfolio />
+        }>
+        </Route>
+    </Routes>
+    </Router>
     </>
   );
 }

@@ -1,39 +1,44 @@
-import React from "react";
-import logo from "/Images/hireme.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-const Navbar = () =>  {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark transparent">
-          <div className="container">
-            <a className="navbar-brand" href="#Contact_Section"><img calssName="logo"src={logo}/></a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <FontAwesomeIcon icon={faBars} style={{color:"white"}}/>
-            </button>
+import React from 'react'
+import logo from "../Images/hireme.png"
+import '../Navbar/Navbar.css'
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item active">
-                  <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#section">About Me</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Services</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#Portfolio_Section">Portfolio</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#Contact_Section">Contact</a>
-                </li>
-                
-                
-              </ul>
-              </div>
-            </div>
-        </nav>
-    )
+
+function Navbar() {
+  return (
+    <div className="navbar">
+      <img className="navbar__Logo"
+      src= { logo }
+      alt=""
+      />
+      <div className="navbar__nav">
+        <div className="navbar__Option">
+          <span className="navbar_Option_lineOne">
+            Home<span className="sr-only">(Current)</span>
+          </span>
+        </div>
+        <div className="navbar__Option">
+          <a href="#experience"><span className="navbar_Option_lineOne">
+            About Me
+          </span></a>
+        </div>
+        <div className="navbar__Option">
+          <span className="navbar_Option_lineOne">
+            Skills
+          </span>
+        </div>
+        <div className="navbar__Option">
+          <span className="navbar_Option_lineOne">
+            Portfolio
+          </span>
+        </div>
+        <div className="navbar__Option">
+          <span className="navbar_Option_lineOne">
+            Contact
+          </span>
+        </div>
+      </div>
+    </div>
+  )
 }
+
 export default Navbar
