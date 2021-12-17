@@ -1,4 +1,64 @@
-.navbar{
+/**********************************************Style For Logo****************************************************/
+.logo {
+    width: 16.25rem;
+}
+
+/**********************************************Style for Navigation Link*****************************************************/
+nav {
+    z-index: 2;
+}
+
+nav a .nav-link {
+    cursor: pointer;
+    letter-spacing: 0.5rem;
+
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav>li>a {
+    color: var(--primary-white) !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-top: 0.1875rem solid var(--primary-dark);
+
+}
+span.navbar_Option_lineOne {
+    color: white;
+}
+
+.navbar a {
+    padding: 0 !important;
+
+}
+
+.navbar-brand {
+
+    top: 0;
+    left: 0;
+    max-width: 16rem;
+    height: 4rem !important;
+    padding: 0 !important;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 10vh;
+}
+
+.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus {
+    border-top: 0.1875rem solid var(--primary-brown);
+}
+
+.navbar-nav>li>a:hover {
+    border-top: 0.1875rem solid var(--primary-brown);
+}
+
+
+.navbar {
     height: 60px;
     display: flex;
     align-items: center;
@@ -15,20 +75,23 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.navbar__Logo{   
+
+.navbar__Logo {
     width: 100px;
     height: 60px;
     object-fit: contain;
     /* margin-top: 18px; */
     /* margin: 0 20px; */
 }
+
 .navbar__Option {
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
 }
-.navbar__Option_lineOne{
+
+.navbar__Option_lineOne {
     font-size: 12px;
 }

@@ -1,73 +1,47 @@
 
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Components/Navbar/Navbar";
-import Header from "./Components/Header/Header";
-import Particles from "react-particles-js";
-import Experience from "./Components/Experience/Experience";
-import Divider from "./Components/divider";
-import Contact from "./Components/Contact/Contact"
+import Main from './Components/Main/Main'
 import Portfolio from "./Components/Portfolio/Portfolio";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Components/Home/Home';
-
+import Portfolios from './Components/Portfolio/Portfolios/Portfolios';
+import Resume from './Components/Resume/Resume'
+import Coverleter from './Components/Coverletter/Coverleter';
 
 function App() {
   return (
     <>
-    <Router>
-    
-     <Particles 
-                params = {
-                    {
-                        particles : {
-                            number :{
-                                value : 50,
-                                density : {
-                                    enable : true,
-                                   value_area : 900
-                                }
-                            },
-                            color : {
-                              value : '#ffff'
-                            },
-                            opacity : {
-                              value : 0.5,
-                              anim : {
-                                enable : true,
-                              }
-                            },
-                            size : {
-                              value : 2,
-                            random : true,
-                            anim : {
-                              enable : true,
-                              speed : 3
-                            }
-                            },
-                            move : {
-                              speed : 5
-                            }
-                           
-                        }
-                    }
-                }
-       />
-    <Navbar />
-    {/* <Certificate /> */}
-    <Header />
-  
-    <Home />
-    
-    <Contact/>
-    <Routes> 
+      <Router>
 
-        <Route path="/portfolio" element ={
-            <Portfolio />
-        }>
-        </Route>
-    </Routes>
-    </Router>
+
+        {/* <Certificate /> */}
+        <Routes>
+          <Route path="/LINGESHWARAN_KRISHNAN_Cover_Letter" element={
+            <Coverleter />
+          }>
+          </Route>
+        </Routes>
+        <Routes>
+          <Route path="/LINGESHWARAN_KRISHNAN_CV" element={
+            <Resume />
+          }>
+          </Route>
+        </Routes>
+        <Routes>
+
+          <Route path="/portfolio" element={
+            <Portfolios />
+          }>
+          </Route>
+        </Routes>
+        <Routes>
+
+          <Route path="/" element={
+            <Main />
+          }>
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 }

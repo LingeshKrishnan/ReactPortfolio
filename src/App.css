@@ -1,130 +1,87 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
 body {
   font-family: 'Roboto', sans-serrif;
 }
+
 :root {
-  --primary-white : #ffff;
-  --primary-brown : #fd7e14;
-  --primary-dark : #343A40;
-  --black : #000000;
-}
-/**********************************************Style For Logo****************************************************/
-.logo {
-  width: 16.25rem;
+  --primary-white: #ffff;
+  --primary-brown: #fd7e14;
+  --primary-dark: #343A40;
+  --black: #000000;
 }
 
-/**********************************************Style for Navigation Link*****************************************************/
-nav {
-  z-index: 2;  
-}
-nav a .nav-link {
-  cursor: pointer;
-  letter-spacing: 0.5rem;
-  
-}
-
-nav ul li {
-  text-transform: uppercase;
-  font-weight: 500;
- }
-
- .navbar-nav >  li > a {
-   color: var(--primary-white)  !important;
-      margin-right: 20px;
-   margin-left: 20px;
-   border-top: 0.1875rem solid var(--primary-dark) ;
-  
- }
- .navbar a {
- padding: 0 !important; 
-   
-}
- .navbar-brand 
- {
-  
-   top: 0;
-   left: 0;
-   max-width: 16rem;
-   height: 4rem !important;
-   padding: 0 !important;
- }
- 
- .navbar-brand img {
-   width: auto;
-   height: 10vh;
- }
- .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-   border-top: 0.1875rem solid var(--primary-brown) ;
- }
- .navbar-nav > li > a:hover{
-  border-top: 0.1875rem solid var(--primary-brown) ;
- }
-
- /**********************Header Wrapper***************************/
- .header-wrapper{
+/**********************Header Wrapper***************************/
+.header-wrapper {
   position: relative;
-   background : url('./Components/Images/Lingesh_Cover.JPG') no-repeat;
-  
-  animation: flips 5s ease ;
-  animation-iteration-count: 1;   
-   height: 90vh;
-   background-size: cover;
-   
-   
- }
- @keyframes flips {
-  0% { -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); }
-  10% { -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); }
-  
+  background: url('./Components/Images/Lingesh_Cover.JPG') no-repeat;
+
+  animation: flips 5s ease;
+  animation-iteration-count: 1;
+  height: 90vh;
+  background-size: cover;
+
+
+}
+
+@keyframes flips {
+  0% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  10% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
 }
 
 
 
 
- /**********************Main info***************************/
- .main-info {
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
- }
-
- /*******************************************H2 In Main info**********************************************************/
- .main-info h1 {
- color:white;
-  
+/**********************Main info***************************/
+.main-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
- /**************************Typed Text************************/
+/*******************************************H2 In Main info**********************************************************/
+.main-info h1 {
+  color: white;
 
- .typed-text {
-   
-   text-transform: uppercase;
-   color :var(--primary-white);
-   font-weight: bold;
-   font-size: 2rem;
-   
- }
+}
 
- /*************************For React JS Particles**************/
- .tsparticles-canvas-el{
-   position: absolute;
-  
-   z-index: 1;
-   margin-right: 200px;
-   
- }
+/**************************Typed Text************************/
 
- /********************************************For Experience section************************************************/
+.typed-text {
+
+  text-transform: uppercase;
+  color: var(--primary-white);
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+/*************************For React JS Particles**************/
+.tsparticles-canvas-el {
+  position: absolute;
+
+  z-index: 1;
+  margin-right: 200px;
+
+}
+
+/********************************************For Experience section************************************************/
 /*.work_column{
   background: url(work.jpg) no-repeat;
   background-size: cover;
@@ -134,32 +91,36 @@ nav ul li {
   background-size: cover;
 } */
 
- .wavetext{
-   position: relative;
-   -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(0,0,0,0.2));
- }
-.wavetext span{
+.wavetext {
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.wavetext span {
   position: relative;
   display: inline-block;
   color: black;
   font-size: 2rem;
-  animation: wave 1s ease-in-out ;
+  animation: wave 1s ease-in-out;
   animation-iteration-count: 3;
   animation-delay: calc(0.1s * var(--i));
 }
+
 @keyframes wave {
-  0%{
+  0% {
     transform: translateY(0px);
   }
 
-  20%{
+  20% {
     transform: translateY(-20px);
   }
-  40%,100%{
+
+  40%, 100% {
     transform: translateY(0px);
   }
 
 }
+
 /**********************Divider for common***********************/
 .divider {
   margin-top: 30px;
@@ -167,98 +128,45 @@ nav ul li {
 }
 
 
-/************************For Contact Form*******************/
-.Contact_Section{
-  position: relative;
-  font-family: 'Roboto', sans-serrif;
-  background: url('./Components/Images/contact1.jpg') no-repeat top center;
-  height: 100vh;
-  background-size: cover;
-}
-
-.wrapper {
-  width: 100%;
-  transform: translateY(-50%);
-  position: absolute;
-  padding: 0 20px;
-  top: 50%;
-
-}
-.contact_form{
-  
-  display: flex;
-  margin: 0 auto;
-  background: black;
-border-radius: 5px;
-padding: 30px;
-box-shadow: 0 0 0 10px black;
-}
-.input_fields{
-  display: flex;
-  flex-direction: column;
-  margin-right: 4%;
-}
-.input_fields, .msg {
-  width: 48%;
-}
-.input_fields .input, .msg textarea{
-  margin : 10px 0;
-  background: transparent;
-  border: 0;
-  border-bottom: 2px solid #c5ecfd;
-  padding: 10px;
-  color: #c5ecfd;
-  width: 100%;
-}
-.msg textarea{
-  height: 212px;
-}
-
-::-webkit-input-placeholder{
-  color: #c5ecfd;
-}
-.btn {
-  background: #39b7dd;
-  text-align: center;
-  padding: 15px;
-  border-radius: 5px;
-  color: #ffff;
-  cursor: pointer;
-  text-transform: uppercase;
-  
-}
 
 /**Portfolio **/
-.Portfolio_Section{
+.Portfolio_Section {
   position: relative;
 }
-.card{
-  height:300px;
+
+.card {
+  height: 300px;
   overflow: hidden;
 }
-.card img{
+
+.card img {
   transition: all 0.5s ease;
 }
+
 .card:hover img {
   transform: scale(1.2);
 }
+
 .card-body {
- position: relative;
- opacity: 60%; 
+  position: relative;
+  opacity: 60%;
 }
-.card-body :hover{
+
+.card-body :hover {
   color: red;
-  
+
   font-size: 20px;
   font-weight: 900;
 }
-.card-body p{
-padding-top:150px;
-color: black;
-font-size: 20px;
-font-weight: 700px;
+
+.card-body p {
+  padding-top: 150px;
+  color: black;
+  font-size: 20px;
+  font-weight: 700px;
 }
-.Portfolio_Title{
+
+.Portfolio_Title {
   margin-top: 50px;
   margin-bottom: 20px;
 }

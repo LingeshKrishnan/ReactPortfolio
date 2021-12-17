@@ -1,0 +1,66 @@
+/************************For Contact Form*******************/
+.Contact_Section {
+    position: relative;
+    font-family: 'Roboto', sans-serrif;
+    background: url('../Images/contact1.jpg') no-repeat top center;
+    height: 60vh;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+    padding: 0 20px;
+    top: 50%;
+
+}
+
+.contact_form {
+
+    display: flex;
+    margin: 0 auto;
+    background: black;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 0 10px black;
+}
+
+.input_fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input_fields, .msg {
+    width: 48%;
+}
+
+.input_fields .input, .msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+}
+
+::-webkit-input-placeholder {
+    color: #c5ecfd;
+}
+
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}

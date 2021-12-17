@@ -1,15 +1,15 @@
 import React from 'react'
 import '../Experience/Experience.css'
 
-function Experience({title, companyname, experience, projects, image}) {
+function Experience({ title, companyname, experience, projects, image }) {
     return (
-        <div className="experience" id="experience">
-                <img className="experience__Companyimage"
-                src = { image }
-                alt = ""
-                />            
+        <div className="experience" id={'experience'}>
+            <img className="experience__Companyimage"
+                src={image}
+                alt=""
+            />
             <div className="experience__Info">
-                <p className="experience__Title">{ title }</p>
+                <p className="experience__Title">{title}</p>
                 <p className="experience__Companyname">
                     {companyname}
                 </p>
@@ -18,9 +18,9 @@ function Experience({title, companyname, experience, projects, image}) {
                 </p>
                 <p className="experience__Projects">
                     {projects}
-                </p>            
+                </p>
             </div>
-            
+
         </div>
     )
 }
