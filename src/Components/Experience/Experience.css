@@ -1,4 +1,4 @@
-.experience{
+.experience {
     display: flex;
     flex-direction: row;
     background: white;
@@ -11,13 +11,15 @@
     z-index: 1;
     width: 100%;
 }
+
 .experience__Companyimage {
     max-height: 200px;
     width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
 }
-.experience__Info{
+
+.experience__Info {
     width: 100%;
     height: 100px;
     margin-bottom: 15px;
@@ -27,15 +29,18 @@
     font-weight: 600;
     font-size: 18px;
 }
+
 .experience__Companyname {
     font-weight: 500;
     font-size: 16px;
 }
+
 .experience__Experience {
     font-weight: 500;
     font-size: 16px;
     color: darkgreen;
 }
+
 .experience__Projects {
     font-size: 16px;
 }
