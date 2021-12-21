@@ -6,18 +6,20 @@ import Portfolios from '../Portfolio/Portfolios/Portfolios'
 
 function Navbar() {
   return (
-    
+
     <div className="navbar">
-      <img className="navbar__Logo"
-        src={logo}
-        alt=""
-      />
+      <a href='/#Contact_Section'>
+        <img className="navbar__Logo"
+          src={logo}
+          alt=""
+        />
+      </a>
       <div className="navbar__nav">
         <div className="navbar__Option">
           <a href='/'>
-          <span className="navbar_Option_lineOne">
-            Home<span className="sr-only">(Current)</span>
-          </span>
+            <span className="navbar_Option_lineOne">
+              Home<span className="sr-only">(Current)</span>
+            </span>
           </a>
         </div>
         <div className="navbar__Option">
@@ -27,23 +29,23 @@ function Navbar() {
         </div>
         <div className="navbar__Option">
           <a href='#Documents'>
-          <span className="navbar_Option_lineOne">
-            Documents
-          </span>
+            <span className="navbar_Option_lineOne">
+              Documents
+            </span>
           </a>
         </div>
-        <Link to="/portfolio">
-        <div className="navbar__Option">
-          <span className="navbar_Option_lineOne">
-            Portfolio
-          </span>
-        </div>
+        <Link to="/portfolio" target='_blank'>
+          <div className="navbar__Option">
+            <span className="navbar_Option_lineOne">
+              Skills&Portfolio
+            </span>
+          </div>
         </Link>
         <div className="navbar__Option">
           <a href='#Contact_Section'>
-          <span className="navbar_Option_lineOne">
-            Contact
-          </span>
+            <span className="navbar_Option_lineOne">
+              Contact
+            </span>
           </a>
         </div>
       </div>

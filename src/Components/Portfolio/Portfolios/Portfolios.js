@@ -2,25 +2,26 @@ import React from 'react'
 import Portfolio from '../Portfolio'
 import react_portfolio from '../../Images/Lingesh_Cover.JPG'
 import blog from '../../Images/blog.png'
-
+import Skills from '../../Skills/Skills'
 
 function Portfolios() {
     return (
         <div>
+            <Skills />
             <div className="home__row">
                 <Portfolio
                     title="React Portfolio"
                     link="https://github.com/LingeshKrishnan/ReactPortfolio"
                     description="Portfolio and Personal Website built in React.js"
                     website="https://www.lingeshwaran.me"
-                    image={react_portfolio}
+                   
                 />
                 <Portfolio
                     title="React Portfolio"
                     link="https://github.com/LingeshKrishnan/ReactPortfolio"
                     description="Portfolio and Personal Website built in React.js"
                     website="https://www.lingeshwaran.me"
-                    image={react_portfolio}
+                   
                 />
             </div>
             <div className="home__row">
@@ -36,7 +37,7 @@ function Portfolios() {
                     link="https://github.com/LingeshKrishnan/ReactPortfolio"
                     description="Portfolio and Personal Website built in React.js"
                     website="https://www.lingeshwaran.me"
-                    image={react_portfolio}
+                   
                 />
             </div>
         </div>
