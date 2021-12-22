@@ -6,15 +6,18 @@ function Portfolio({title, link, description, website}) {
         <div className="portfolio">
            
             <div className="portfolio__Info">
-                <p className="portfolio__Title">
+                <h3 className="portfolio__Title">
                     {title}
-                </p>
+                </h3>
                 <a href= { link }>
                     { link }
                 </a>
-                <p className="prtofolio__Description">
+                <p className="portfolio__Description">
                     { description }
-                </p>              
+                </p>       
+                <a href={ website } className='portfolio__website'>
+                    { website }
+                </a>       
             </div>
         </div>
     )
