@@ -4,24 +4,22 @@ import {CanvasJSChart} from 'canvasjs-react-charts';
 function Skills() {
     const options = {
         animationEnabled: true,
-        theme: "dark1",
+        theme: "light2",
         zoomEnabled:true,
         title:{
             text: "Technology Skills"
         },
        
         axisY: {
-            title: "Percentage",
+            title: "For 100(Score by myself)",
             includeZero: true,
-            interval: 10,
-            // type: String
-            // labelFormatter: this.addSymbols
+            interval: 10,           
         },
         data: [{
             type: "bar",
             
             dataPoints: [
-                { y:  80, label: "PHP" },
+                { y:  80, label: "PHP(Core)" },
                 { y:  70, label: "CodeIgniter" },
                 { y:  70, label: "Laravel" },
                 { y:  60, label: "Symfony" },
@@ -33,7 +31,7 @@ function Skills() {
                 { y:  50, label: "Gitlab (CI/CD)" },
                 { y:  70, label: "Git" },
             ]
-        }]
+        }],
     }
     return (
         <div>
